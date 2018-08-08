@@ -1,7 +1,7 @@
 {
-	"name": "pneu_tech",
+	"name": "webpack_builder",
 	"version": "1.0.0",
-	"description": "PneuTech web site, for WordPress",
+	"description": "Webpack starter builder",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/ADCI/webpack-starter-kit"

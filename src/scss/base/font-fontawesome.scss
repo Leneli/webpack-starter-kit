@@ -1,4 +1,4 @@
-/*
+
 @font-face {
 	font-family: "Font Awesome";
 	font-style: normal;
@@ -6,17 +6,27 @@
 	src: url(../fonts/fa/fa-regular-400.woff2) format('woff2'),
 	url(../fonts/fa/fa-regular-400.woff) format('woff');
 }
+
 @font-face {
-	font-family: "Font Awesome Solid";
+	font-family: "Font Awesome";
 	font-style: normal;
-	font-weight: 900;
+	font-weight: 300;
+	src: url(../fonts/fa/fa-light-300.woff2) format('woff2'),
+	url(../fonts/fa/fa-light-300.woff) format('woff');
+}
+
+@font-face {
+	font-family: "Font Awesome";
+	font-style: normal;
+	font-weight: bold;
 	src: url(../fonts/fa/fa-solid-900.woff2) format('woff2'),
 	url(../fonts/fa/fa-solid-900.woff) format('woff');
 }
+
 @font-face {
 	font-family: "Font Awesome Brand";
 	font-style: normal;
 	font-weight: normal;
 	src: url(../fonts/fa/fa-brands-400.woff2) format('woff2'),
 	url(../fonts/fa/fa-brands-400.woff) format('woff');
-} */
+}
