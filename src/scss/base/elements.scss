@@ -1,26 +1,31 @@
-/* ==========================================================================
-   Base styles
-   ========================================================================== */
-/* stylelint-disable selector-max-universal  */
+/***** BASE STYLES *****/
+
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
-}
-/* stylelint-enable selector-max-universal */
-
-html {
-  font-family: $main-font;
-  font-size: $main-font-size;
-  line-height: $main-line-height;
-  color: $main-text-color;
-  overflow-wrap: break-word;
-  word-wrap: break-word;
+	box-sizing: border-box;
+	-webkit-overflow-scrolling: touch;
 }
 
+*::selection {
+	background-color: $link;
+	color: $white;
+}
+
+html,
 body {
-  background: $main-bg;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: $main-font;
+	font-size: $main-font-size;
+	font-weight: normal;
+	line-height: $main-line-height;
+	color: $main-text-color;
+	background: $main-bg;
 }
+
 
 audio,
 canvas,
@@ -31,19 +36,24 @@ video,
 object,
 input,
 textarea {
-  vertical-align: middle;
-  max-width: 100%;
+	vertical-align: middle;
+	max-width: 100%;
 }
 
 img {
-  height: auto;
+	max-width: 100%;
+	height: auto;
+}
+
+p {
+	font-size: 1rem;
 }
 
 textarea {
-  resize: vertical;
+	resize: vertical;
 }
 
 button,
 input[type="submit"] {
-  cursor: pointer;
+	cursor: pointer;
 }

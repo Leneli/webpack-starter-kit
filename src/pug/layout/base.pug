@@ -1,21 +1,23 @@
+include ../base/mixins
+
+block variables
+	- var title = "Site";
+
 doctype html
 html(lang="en")
-  head
-    block page-title
-      title Title
-    include ../base/head
+	head
+		title TLODDH | #{title}
+		include ../base/head
 
-  block vars
-    - var bodyClasses = '';
+		block style
 
-  body(class=bodyClasses)
-    .page
-      include ../objects/header
-      .content
-        block page-content
+	body
+		.wrapper
+			header.header
+				include ../objects/header
 
-      include ../objects/footer
-    include ../base/cellar
+			main.main
+				block content
 
-
-
+			footer.footer
+				include ../objects/footer

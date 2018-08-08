@@ -1,0 +1,8 @@
+@keyframes mig {
+	0%   { color: inherit; }
+	10%  { color: $accent; }
+	20%  { color: inherit; }
+	30%  { color: $accent; }
+	40%  { color: inherit; }
+	100% { color: inherit; }
+}

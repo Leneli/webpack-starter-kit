@@ -1,34 +1,31 @@
-$container-gutter: 15px;
-$container-width: calc(1200px + #{$container-gutter} * 2);
-$col-gutter: $container-gutter;
-
-.clearfix {
-  @include clearfix;
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
 }
 
-.container {
-  @include clearfix;
-
-  display: block;
-  width: auto;
-  max-width: $container-width;
-  padding-left: $container-gutter;
-  padding-right: $container-gutter;
-  margin-left: auto;
-  margin-right: auto;
+.header,
+.footer {
+	flex-shrink: 0;
 }
 
-.row {
-  @include clearfix;
-
-  display: block;
-  margin-left: -$col-gutter;
-  margin-right: -$col-gutter;
+.main {
+	flex: 1 0 auto;
+	overflow-x: hidden;
 }
 
-.col {
-  display: block;
-  float: left;
-  padding-right: $col-gutter;
-  padding-left: $col-gutter;
+.wrap-content {
+	width: 100%;
+	padding-left:  calc((100% - 1200px) / 2);
+	padding-right: calc((100% - 1200px) / 2);
+
+	@include x-large {
+		padding-left: 10%;
+		padding-right: 10%;
+	}
+
+	@include phones {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
 }

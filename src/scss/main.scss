@@ -8,19 +8,37 @@
 @import "./settings/main";
 
 /* Mixins */
+@import "./utilities/media-query";
 @import "./utilities/mixins";
+@import "./utilities/animation";
 
 /* Base styles */
+@import "./base/font-montserrat";
+@import "./base/font-fontawesome";
 @import "./base/elements";
+@import "./base/typography";
+@import "./base/media-elements";
+@import "./base/fix";
+
+/* Font Awesome */
+// @import "./fa/fontawesome";
 
 /* Layout */
 @import "./layout/main";
+@import "./layout/indent";
+@import "./layout/grid";
+@import "./layout/bg";
 
 /* Objects */
-@import "./objects/typography";
-@import "./objects/buttons";
+
 @import "./objects/header";
 @import "./objects/footer";
 @import "./objects/nav";
+@import "./objects/content";
+@import "./objects/page-error";
+
 
 /* Components */
+@import "./components/forms";
+@import "./components/buttons";
+@import "./components/inputs";

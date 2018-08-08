@@ -1,0 +1,92 @@
+.page-error {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	font-size: 1rem;
+	line-height: 1;
+}
+
+.page-error-code {
+	font-family: $rc;
+	font-size: 50px;
+	line-height: 1;
+	color: $color;
+}
+
+.page-error-code_accent {
+	@include transition();
+
+	font-family: $r;
+	font-weight: bold;
+	animation: mig 2s ease infinite;
+}
+
+.page-error-text {
+	margin: 30px 0;
+	font-size: 30px;
+	line-height: 1.2;
+	color: $dark-grey;
+}
+
+.page-error-span {
+	font-size: 24px;
+	color: $quote;
+}
+
+.page-error-link {
+	@include transition();
+
+	position: relative;
+	display: inline;
+	color: $link;
+	font-size: 1.1em;
+	font-variant: small-caps;
+	font-weight: 900;
+	text-transform: lowercase;
+	text-decoration: none;
+	white-space: nowrap;
+
+	cursor: pointer;
+
+	&::before,
+	&::after {
+		@include transition();
+
+		content: "";
+		position: absolute;
+		display: block;
+		bottom: 0;
+	}
+
+	&::before {
+		height: 3px;
+		left: 0;
+		right: 0;
+		background-color: $link;
+	}
+
+	&::after {
+		width: 20px;
+		height: 20px;
+		right: -20px;
+		background-color: transparent;
+		border: 3px solid transparent;
+		border-right-color: rgba($link, 0);
+		border-bottom-color: rgba($link, 0);
+		transform: rotate3d(1, 0, 0, 90deg) translate3d(0, calc(50% + 2px), 0) scale3d(0, 0, 0);
+	}
+
+	&:hover {
+		&::before {
+			right: -30px;
+		}
+
+		&::after {
+			border-right-color: rgba($link, 1);
+			border-bottom-color: rgba($link, 1);
+			transform: rotate3d(0, 0, 1, -45deg) translate3d(0, calc(50% + 2px), 0) scale3d(1, 1, 1);
+		}
+	}
+}

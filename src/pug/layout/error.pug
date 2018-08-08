@@ -1,0 +1,15 @@
+block variables
+	- var title = "Site";
+	- var bodyClasses = "";
+
+doctype html
+html(lang="en")
+	head
+		title TLODDH | #{title}
+		include ../base/head
+
+	body(class=bodyClasses)
+
+		.wrapper.wrap-content
+			main.main.page-error
+				block content

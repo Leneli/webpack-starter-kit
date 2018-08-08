@@ -1,0 +1,14 @@
+extends ../layout/error
+
+block variables
+	- title = "Error Page";
+	- code  = 404;
+
+block content
+	.page-error-code Ooops... Error 
+		span.page-error-code_accent #{code}
+
+	.page-error-text We are sorry, but the page you are looking for does not exist.
+	
+	.page-error-span Please check entered address and try again or 
+		a.page-error-link(href="index.html") go to Home page
