@@ -1,12 +1,13 @@
 include ../base/mixins
 
 block variables
+	- var siteName = "WebPack";
 	- var title = "Site";
 
 doctype html
 html(lang="en")
 	head
-		title TLODDH | #{title}
+		title #{siteName} | #{title}
 		include ../base/head
 
 		block style

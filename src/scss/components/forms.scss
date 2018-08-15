@@ -1,1 +1,24 @@
-.form {}
+.form {
+	display: block;
+	width: 100%;
+}
+
+.form_wr {
+	width: 100%;
+	
+	@include medium {
+		margin: auto;
+	}
+}
+
+.form__block {
+	display: block;
+	width: 100%;
+	margin-bottom: .5rem;
+}
+
+.form__buttons {
+	display: flex;
+	align-items: center;
+	margin-top: 1.5rem;
+}

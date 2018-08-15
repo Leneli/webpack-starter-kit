@@ -59,7 +59,10 @@ module.exports = (env) => {
 							loader: "babel-loader",
 							options: {
 								cacheDirectory: true,
-								plugins: ["transform-runtime"],
+								plugins: [
+									"transform-runtime",
+									"transform-exponentiation-operator"
+								],
 							},
 						},
 						{

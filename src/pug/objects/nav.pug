@@ -1,37 +1,17 @@
--
-	var menu = [
-		{
-			name: "Home",
-			href: "index.html"
-		},
-		{
-			name: "Distributors",
-			href: "distributors.html"
-		},
-		{
-			name: "Products",
-			href: "products.html"
-		},
-		{
-			name: "Category",
-			href: "category.html"
-		},
-		{
-			name: "Product",
-			href: "product-inner.html"
-		},
-		{
-			name: "Contact",
-			href: "contact.html"
-		},
-		{
-			name: "404",
-			href: "404.html"
-		}
-	]
-
-
-mixin nav(className)
+mixin nav(menu, className)
 	nav(class=`nav ${className || ''}`)
 		each item in menu
-			a(href=`${item.href}`)= item.name
+			if (!item.sub)
+				if (item.logo == true)
+					+logo({ className: "logo_head" })
+				else
+					a(href=`${item.href}`)= item.name
+				
+			else
+				.nav__submenu
+					a(href=`${item.href}`)= item.name
+					.nav__arr
+					ul
+						each sub in item.sub
+							li
+								a(href=`${sub.href}`)= sub.name

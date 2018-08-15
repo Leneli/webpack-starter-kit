@@ -35,17 +35,3 @@
 		@content;
 	}
 }
-
-// if height > als 1024
-@mixin h-ipad() {
-	@media screen and (min-height: $ipad) {
-		@content;
-	}
-}
-
-// if height < als 375
-@mixin h-phone() {
-	@media screen and (max-height: $phone-height) {
-		@content;
-	}
-}

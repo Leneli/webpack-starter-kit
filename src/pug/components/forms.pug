@@ -1,0 +1,34 @@
+mixin login()
+	form.form(action="/")
+		.form__block
+			input.input(type="email", name="email", placeholder="email")
+		
+		.form__block
+			input.input(type="password", name="password", placeholder="password")
+		
+		.form__buttons
+			button.submit(type="submit") log in
+
+
+mixin contact-us(isProduct)
+	form.form(action="/")
+		.form__hidden
+			input(type="hidden", name="_hidden_value_")
+			
+		.form__block
+			input.input(type="text", name="name", placeholder="name")
+			
+		.form__block
+			input.input.__mask-input-phone(type="tel", name="phone", placeholder="phone")
+			
+		.form__block
+			input.input(type="email", name="email", placeholder="email")
+		
+		.form__block
+			input.input(type="text", name="company", placeholder="company")
+			
+		.form__block
+			textarea.textarea(name="message", cols="30", rows="10", placeholder="textarea")
+		
+		.form__buttons
+			input.submit(type="submit", value="submit your request")

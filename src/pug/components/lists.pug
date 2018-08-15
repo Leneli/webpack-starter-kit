@@ -1,0 +1,5 @@
+mixin ul(list, data)
+	ul(class=`${data && data.className ? data.className : ""}`)
+		if (list)
+			each li in list
+				li= li

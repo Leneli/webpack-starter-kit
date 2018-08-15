@@ -16,16 +16,16 @@
 
 .wrap-content {
 	width: 100%;
-	padding-left:  calc((100% - 1200px) / 2);
-	padding-right: calc((100% - 1200px) / 2);
+	padding-left:  $wrap-content-desctop;
+	padding-right: $wrap-content-desctop;
 
 	@include x-large {
-		padding-left: 10%;
-		padding-right: 10%;
+		padding-left:  $wrap-content-x-large;
+		padding-right: $wrap-content-x-large;
 	}
 
 	@include phones {
-		padding-left: 15px;
-		padding-right: 15px;
+		padding-left:  $wrap-content-phone;
+		padding-right: $wrap-content-phone;
 	}
 }

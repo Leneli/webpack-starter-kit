@@ -30,29 +30,33 @@ $success: $green;
 
 
 /* Fonts */
-$m: "Montserrat";
 $fa : "Font Awesome";
 $brand: "Font Awesome Brand";
 $f-sans-serif: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 
 /* Base variables */
-$main-font: $m, $f-sans-serif;
+$main-font: $f-sans-serif;
 $main-font-size: 16px;
 $main-line-height: 1.5;
-$heading-font: $m, $f-sans-serif;
 $heading-line-height: 1.1;
 $main-bg: $white;
 $main-text-color: $color;
 $secondary-text-color: $white;
-$default-transition-time: 0.3s;
+$default-transition-time: .3s;
 $default-transition: all $default-transition-time ease;
 
 
 /* Media variables */
-$phones: 480px;
+$phones:   480px;
 $l-phones: 575px;
-$tablets: 767px;
-$medium: 991px;
-$large: 1199px;
-$x-large: 1439px;
+$tablets:  767px;
+$medium:   991px;
+$large:    1199px;
+$x-large:  1439px;
 $retina2x: screen and (min-resolution: 120dpi), screen and (min-resolution: 1.25dppx);
+
+
+/* Wrapper for content */
+$wrap-content-desctop: calc((100% - 1200px) / 2);
+$wrap-content-x-large: 10%;
+$wrap-content-phone  : 10px;

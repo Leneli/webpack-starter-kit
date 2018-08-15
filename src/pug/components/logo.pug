@@ -1,0 +1,6 @@
+mixin logo(data)
+	a(
+		href="index.html", 
+		class=`logo ${data && data.className ? data.className : ''}`,
+		style=`background-image: url(${data && data.img ? data.img : 'assets/img/logo.svg'});`
+	)

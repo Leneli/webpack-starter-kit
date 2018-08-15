@@ -11,10 +11,9 @@
 @import "./utilities/media-query";
 @import "./utilities/mixins";
 @import "./utilities/animation";
+@import "./utilities/functions";
 
 /* Base styles */
-@import "./base/font-montserrat";
-@import "./base/font-fontawesome";
 @import "./base/elements";
 @import "./base/typography";
 @import "./base/media-elements";
@@ -42,3 +41,4 @@
 @import "./components/forms";
 @import "./components/buttons";
 @import "./components/inputs";
+@import "./components/gmap";

@@ -65,7 +65,10 @@ module.exports = () => {
 							loader: "babel-loader",
 							options: {
 								cacheDirectory: true,
-								plugins: ["transform-runtime"],
+								plugins: [
+									"transform-runtime",
+									"transform-exponentiation-operator"
+								],
 							},
 						},
 						{
@@ -180,7 +183,7 @@ module.exports = () => {
 			]
 		},
 
-    	plugins: [
+		plugins: [
 			new webpack.DefinePlugin({
 				LANG: JSON.stringify("en"),
 				"process.env": { NODE_ENV: "'production'" },

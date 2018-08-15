@@ -57,3 +57,12 @@ button,
 input[type="submit"] {
 	cursor: pointer;
 }
+
+input,
+button,
+textarea,
+select {
+	-webkit-appearance: none;
+	-moz-appearance: textfield;
+	&::-ms-expand { display: none; }
+}
